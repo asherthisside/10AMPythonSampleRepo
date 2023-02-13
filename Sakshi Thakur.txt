@@ -1,0 +1,37 @@
+A.1 A website is a collection of web pages and related content that is identified by a common domain name and published on at least one Web server. Example- google , facebook , amazon.
+Static website - A static website is one with stable content where every user sees the exact same thing on each individual page.
+Dynamic website -  A Dynamic website is one with unstable content where every user see the different thing on each individual page.
+
+A.2 MVT = MODEL VIEW TEMPLATE is software design pattern of developing a web application. MVT has three parts : 1.MODEL- The model is a interface of your website.It is responsible for maintaining data.
+2. VIEW- The view is a user interface what you see in your website when you render your website. It is represented by HTML/ CSS/js . 
+3. TEMPLATE - A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted.
+
+A.3 When you create a Django project, the Django framework itself creates a root directory of the project with the project name on it.
+1. Manage.py
+This file is used basically as a command-line utility and for deploying, debugging, or running our web application.
+This file contains code for runserver, or makemigrations or migrations, etc. that we use in the shell. Anyway, we do not need to make any changes to the file.
+Runserver: This command is used to run the server for our web application.
+Migration: This is used for applying the changes done to our models into the database. That is if we make any changes to our database then we use migrate command. This is used the first time we create a database.
+Makemigration: this is done to apply new migrations that have been carried out due to the changes in the database.
+2. _init_.py
+This file remains empty and is present their only to tell that this particular directory(in this case django_project) is a package.
+3. setting.py
+This file is present for adding all the applications and the middleware application present. Also, it has information about templates and databases. Overall, this is the main file of our Django web application.
+4. urls.py
+This file handles all the URLs of our web application. This file has the lists of all the endpoints that we will have for our website.
+5.wsgi.py
+This file mainly concerns with the WSGI server and is used for deploying our applications on to servers like Apache etc.
+WSGI short for Web Server Gateway Interface can be thought of as a specification that describes how the servers interact with web applications. 
+6. asgi.py
+In the newer versions of Django, you will also find a file named as asgi.py apart from wsgi.py. ASGI can be considered as a succeeder interface to the WSGI.
+ASGI, short for Asynchronous Server Gateway interface also has the work similar to WSGI but this is better than the previous one as it gives better freedom in Django development. That’s why WSGI is now being increasingly replaced by ASGI.
+
+A.4 A model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table.
+1.Create Django Application.
+2. Add the Posts Model.
+3. Update Settings.
+4. Make Migrations.
+5. Verify Database Schema.
+
+
+Total Score: 24/50

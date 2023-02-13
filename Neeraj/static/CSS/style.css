@@ -1,0 +1,30 @@
+body{
+	background-color: darkcyan;
+}
+#input{
+	background-color: purple;
+	border: 1px solid darkcyan;
+	text-align: center;
+}
+.b1{
+	float: left;
+	width: 50%;
+	height: 30rem;
+}
+.b2{
+	width: 50%;
+	float: right;
+}
+.h{
+	border: 1px solid white;
+	border-radius:50px;
+	height:2rem;
+	padding-top: 10px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.r1{
+	margin-left:2rem;
+	font-size:30px;
+}

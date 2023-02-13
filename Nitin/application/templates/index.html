@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+</head><h1>Count Your word here</h1>
+<body>
+    <form action="about" method="post">
+        {% csrf_token %}
+ 
+     <div>
+     <h1>Word Count Application</h1>  
+     </div>
+ 
+      
+     <div><textarea placeholder="Enter your text here..." name="text"></textarea></div>
+     
+ 
+     Characters: <span id="character" name="character">0</span><br> 
+     Words: <span id="word" name="word">0</span><br>
+     Vowels: <span id="vowels" name="vowels">0</span><br>
+     Consonants: <span id="cons" name="cons">0</span><br>
+      
+     <div><button>Characters Count</button></div>
+     <div><button>Words Count</button></div>
+     <div><button>Vowels Count</button></div>
+     <div><button>Consonants Count</button></div>
+    </form>
+</body>
+</html>

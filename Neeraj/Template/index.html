@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML form</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+	<h1 id="input">Count:- Char,Word,Val,Cons</h1>
+	<div>
+		<form action="/result/" method="GET">
+			<div class="b1">
+				<div class="h">User Input Part</div>
+				<input type="text" name="username" class="r1"><br/>
+				<button class="r1">Submit</button>
+			</div>
+			{% comment %} <div class="b2">
+				<div class="h">Result Part</div>
+				<div class="r1">
+					User_Input:-{{name}}<br/>
+					Char:-{{ls}}<br/>
+					Word:-{{word}}<br/>
+					Val:-{{val_count}}<br/>
+					Cons:-{{consonatcount}}<br/>
+				</div>
+			</div> {% endcomment %}
+		</form>
+	</div>
+</body>
+</html>
